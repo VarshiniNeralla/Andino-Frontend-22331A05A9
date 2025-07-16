@@ -1,0 +1,15 @@
+<h2>Your Personalized Roadmap</h2>
+<p>Interest: {{ formData.interest }}</p>
+<p>Duration: {{ formData.duration }}</p>
+<p>Aim: {{ formData.aim }}</p>
+<p>Purpose: {{ formData.purpose }}</p>
+<p>Level: {{ formData.level }}</p>
+
+<ul>
+  <li *ngFor="let step of roadmap">
+    <strong>{{ step.title }}</strong>: {{ step.topic }} -
+    <a [href]="step.resource" target="_blank">Resource</a>
+  </li>
+</ul>
+
+

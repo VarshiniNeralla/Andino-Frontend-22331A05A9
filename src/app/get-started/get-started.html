@@ -1,0 +1,15 @@
+<h2>Tell us about your goals!</h2>
+<form>
+  <input [(ngModel)]="formData.interest" name="interest" placeholder="Area of Interest" required> <br><br>
+  <input [(ngModel)]="formData.duration" name="duration" placeholder="Duration (e.g. 3 months)" required> <br><br>
+  <input [(ngModel)]="formData.aim" name="aim" placeholder="Your Aim (e.g. Web Dev)" required> <br><br>
+  <input [(ngModel)]="formData.purpose" name="purpose" placeholder="For what? (project/job)" required> <br><br>
+  <select [(ngModel)]="formData.level" name="level" required> <br><br>
+    <option disabled selected value="">Select Level</option>
+    <option>Beginner</option>
+    <option>Intermediate</option>
+    <option>Advanced</option>
+  </select>
+  <br><br>
+  <button (click)="generateRoadmap()">Generate Roadmap</button>
+</form>
